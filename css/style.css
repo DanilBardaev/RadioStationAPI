@@ -3,6 +3,16 @@ select {
   width:450px;
   height: 50px;
   border-radius: 15px;
+  background: transparent ;
+  border-color:rgb(213,195,190);
+  color:rgb(213,195,190);
+ padding-left: 20px;
+}
+select.genre{
+  display: inline-block;
+  width:450px;
+  height: 50px;
+  border-radius: 15px;
   background: transparent;
   border-color:rgb(213,195,190);
   color:rgb(213,195,190);
@@ -33,7 +43,7 @@ input::placeholder {
   color:rgb(213,195,190)
 }
 button {
-  width: 250px;
+  width: 200px;
   height: 55px;
   margin-top: 35px;
   border-radius: 15px;
@@ -90,8 +100,8 @@ color:rgb(213,195,190);
   width: 330px;
  max-height: 370px; 
  overflow-x: hidden; 
-margin-left: 550px;
-margin-top: -250px;
+margin-left: 670px;
+margin-top: -350px;
 
 }
 #list_station {
@@ -110,4 +120,15 @@ option, select {
   text-align: left;
       vertical-align: top;
   color: rgb(213,195,190);
+}
+
+
+#button_back {
+margin-left: 250px;
+}
+select:valid+.label {
+  color: black;
+  top: -35px;
+  width: 300px;
+
 }

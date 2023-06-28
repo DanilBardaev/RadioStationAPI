@@ -1,7 +1,8 @@
 const input_country = document.querySelector('#country');
 const selection_Genre = document.querySelector('#genre');
-const searchButton = document.querySelector('#search-button');
+const Button = document.querySelector('#button');
 const list_station = document.querySelector('#list_station');
+const buttonBack = document.querySelector('#button_back');
 
 async function country_and_genre(strana) {
   try {
@@ -17,7 +18,7 @@ async function country_and_genre(strana) {
   }
 }
 
-const genres = ['classical', 'blues', 'hiphop', 'pop', 'rock', 'jazz', 'hip hop', 'trap', 'pasillo', 'R&B', 'trance', 'house', 'metal', 'pank'];
+const genres = ['classical', 'blues', 'hiphop', 'pop', 'rock', 'jazz', 'hip hop', 'trap', 'pasillo', 'R&B', 'trance', 'house', 'metal', 'pank', 'rap', 'kpop'];
 genres.forEach(genre => {
   const option = document.createElement('option');
   option.value = genre;
@@ -28,7 +29,7 @@ genres.forEach(genre => {
 
 let correspondingStations = [];
 
-searchButton.addEventListener('click', async () => {
+Button.addEventListener('click', async () => {
   const country = input_country.value.trim();
   const genre = selection_Genre.value.trim();
   const stations = await country_and_genre(country);
@@ -39,7 +40,17 @@ searchButton.addEventListener('click', async () => {
     list_station.textContent = `В ${country} нет станций с ${genre}`;  
     return;
   }
-  
+  buttonBack.addEventListener('click', () => {
+    input_country.value = '';
+    selection_Genre.value = '';
+    list_station.innerHTML = '';
+    if (selection_Genre.value === ''){
+      let option2 = `<option selected disabled hidden>Выберите cнова!</option>`
+      selection_Genre.insertAdjacentHTML("beforeend", option2);
+    }
+  });
+
+
   list_station.innerHTML = '';
   
   correspondingStations.forEach(station => {
@@ -79,3 +90,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(error);
     });
 });
+
+
