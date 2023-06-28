@@ -1,7 +1,9 @@
 .footer {
-    background-color: #343434fd;
+    background-color: rgb(43,64,75);
    padding: 35px;  
-margin-top: 319px;
+    margin-top: 259px;
+    margin-left:-210px;
+
 }
 .footer h4 {
     color: #ccc;
@@ -45,7 +47,11 @@ h1.h1 {
     color: white;
     opacity: 0.5;
     text-align: center;
+    font-family: Cold Turkey;
 }
 .footer img.gos {
     margin-top: -5px;
+}
+body {
+    font-family: Cold Turkey;
 }

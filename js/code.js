@@ -36,7 +36,7 @@ searchButton.addEventListener('click', async () => {
   correspondingStations = stations.filter(station => station.tags.includes(genre));
   
   if (correspondingStations.length === 0) {
-    list_station.textContent = `Станций с жанром "${genre}" не найдено`;
+    list_station.textContent = `В ${country} нет станций с ${genre}`;  
     return;
   }
   

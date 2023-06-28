@@ -5,7 +5,7 @@ header {
 }
 
 .navbar {
-  background: white;
+  background-color: rgb(43,64,75);
 }
 
 .navbar-brand {
@@ -14,12 +14,12 @@ header {
 }
 
 .nav-item a {
-  color: black;
+  color: rgb(213,195,190);
  
 }
 .nav-item a:hover {
   opacity: 0.7;
-  color: #16e6f5;;
+  color: rgb(213,195,190);
 }
 
 
