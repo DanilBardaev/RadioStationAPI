@@ -33,7 +33,7 @@ Button.addEventListener('click', async () => {
   const country = input_country.value.trim();
   const genre = selection_Genre.value.trim();
   const stations = await country_and_genre(country);
-
+  
   correspondingStations = stations.filter(station => station.tags.includes(genre));
   
   if (correspondingStations.length === 0) {
@@ -49,10 +49,9 @@ Button.addEventListener('click', async () => {
       selection_Genre.insertAdjacentHTML("beforeend", option2);
     }
   });
-
-
+      
   list_station.innerHTML = '';
-  
+
   correspondingStations.forEach(station => {
     const station_linkes = document.createElement('a');
     station_linkes.href = station.homepage;
@@ -68,6 +67,7 @@ Button.addEventListener('click', async () => {
     Items_list.appendChild(station_linkes);
     list_station.appendChild(Items_list);
   });
+ 
 });
 
 

@@ -1,134 +1,191 @@
 select {
   display: inline-block;
-  width:450px;
-  height: 50px;
-  border-radius: 15px;
-  background: transparent ;
-  border-color:rgb(213,195,190);
-  color:rgb(213,195,190);
- padding-left: 20px;
-}
-select.genre{
-  display: inline-block;
-  width:450px;
+  width: 450px;
   height: 50px;
   border-radius: 15px;
   background: transparent;
-  border-color:rgb(213,195,190);
-  color:rgb(213,195,190);
- padding-left: 20px;
+  border-color: rgb(213, 195, 190);
+  color: rgb(213, 195, 190);
+  padding-left: 20px;
 }
-select:hover {  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+
+select.genre {
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+  border-radius: 15px;
+  background: transparent;
+  border-color: rgb(213, 195, 190);
+  color: rgb(213, 195, 190);
+  padding-left: 20px;
+}
+
+select:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
   transition: 0.5s;
 }
+
 #list_station {
-  
+
   font-size: 19px;
 }
+
 input {
-display: inline-block;
-width:450px;
-height: 50px;
-border-radius: 15px;
-background: transparent;
-border-color:rgb(213,195,190);
-color:rgb(213,195,190);
-padding: 20px;
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+  border-radius: 15px;
+  background: transparent;
+  border-color: rgb(213, 195, 190);
+  color: rgb(213, 195, 190);
+  padding: 20px;
 }
+
 input:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
   transition: 0.5s;
 }
+
 input::placeholder {
-  color:rgb(213,195,190)
+  color: rgb(213, 195, 190)
 }
+
 button {
   width: 200px;
   height: 55px;
   margin-top: 35px;
   border-radius: 15px;
   background: transparent;
-  border-color:rgb(213,195,190);
+  border-color: rgb(213, 195, 190);
   color: rgb(224, 202, 196);
   font-family: Cold Turkey;
 
 }
 
 button:hover {
-  background-color: rgb(213,195,190);
-  color: rgb(43,64,75);  transition: 0.5s;
+  background-color: rgb(213, 195, 190);
+  color: rgb(43, 64, 75);
+  transition: 0.5s;
   box-shadow: rgba(8, 103, 204, 0.726) 0px 10px 30px -10px;
 }
-button.btn {  
+
+button.btn {
   margin-left: 15px
 }
 
 body {
-  background-color: rgb(43,64,75);
- overflow: hidden;
-  
- }
- h1  {
-  font-family: Cold Turkey;
-  color:rgb(213,195,190);
- }
-h5 { margin-left: 125px;
-  font-family: Cold Turkey;
- color: rgb(213,195,190);
+  background-color: rgb(43, 64, 75);
+  overflow: hidden;
+
 }
- li{
-color: rgb(213,195,190);
-padding: 5px;
+
+h1 {
+  font-family: Cold Turkey;
+  color: rgb(213, 195, 190);
 }
+
+h5 {
+  margin-left: 125px;
+  font-family: Cold Turkey;
+  color: rgb(213, 195, 190);
+}
+
+li {
+  color: rgb(213, 195, 190);
+  padding: 5px;
+}
+
 #list_station li:hover {
-  background-color: rgb(213,195,190);
-  color:rgb(43,64,75);  transition: 0.5s;
-border-radius: 13px;
+  background-color: rgb(213, 195, 190);
+  color: rgb(43, 64, 75);
+  transition: 0.5s;
+  border-radius: 13px;
 }
-#list_station li:hover a{
- color:rgb(43,64,75);  transition: 0.5s;
+
+#list_station li:hover a {
+  color: rgb(43, 64, 75);
+  transition: 0.5s;
 }
- a{
-color: rgb(213,195,190);
-text-decoration: none;
-font-size: 19px;
+
+a {
+  color: rgb(213, 195, 190);
+  text-decoration: none;
+  font-size: 19px;
 }
+
 #list_station a:hover {
-color:rgb(213,195,190);
+  color: rgb(213, 195, 190);
 }
-.bl-scroll { 
+
+.bl-scroll {
   width: 330px;
- max-height: 370px; 
- overflow-x: hidden; 
-margin-left: 670px;
-margin-top: -350px;
+  max-height: 370px;
+  overflow-x: hidden;
+  margin-left: 670px;
+  margin-top: -350px;
 
 }
+
 #list_station {
-  color:rgb(213,195,190);
+  color: rgb(213, 195, 190);
 }
 
-#body{}::-webkit-scrollbar{width: 5px;height: 5px;}::-webkit-scrollbar-track-piece{background-color: #ffffff00;}::-webkit-scrollbar-thumb:vertical{height: 50px;background-color:rgb(213,195,190);border-radius: 5px;}::-webkit-scrollbar-thumb:horizontal{width: 5px;background-color: #096BAA;}
+#body {}
 
-
-.row-fluid { 
-margin-top: 70px;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-option, select {
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: rgb(213, 195, 190);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #096BAA;
+}
+
+
+.row-fluid {
+  margin-top: 70px;
+}
+
+option,
+select {
 
   text-align: left;
-      vertical-align: top;
-  color: rgb(213,195,190);
+  vertical-align: top;
+  color: rgb(213, 195, 190);
 }
 
 
 #button_back {
-margin-left: 250px;
+  margin-left: 250px;
 }
+
 select:valid+.label {
   color: black;
   top: -35px;
   width: 300px;
 
 }
+
+#check-mark {
+  width: 19px;
+  height: 33px;
+  border: 2px solid #16df6a;
+  border-left: 0;
+  border-top: 0;
+  transition: 1s;
+  transform: rotate(45deg);
+}
+
+
+
