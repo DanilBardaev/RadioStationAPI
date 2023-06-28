@@ -1,23 +1,48 @@
-input {
-    display: inline-block;
-    width:300px;
-    height: 30px;
+select {
+  display: inline-block;
+  width:300px;
+  height: 30px;
 
-  }
-  button {
-    width: 130px;
-    margin-top: 150px;
-  }
-  button.btn {  
-    margin-left: 15px;
-  }
-
-  * {
-  
-    margin: auto;
 }
+input {
+display: inline-block;
+width:300px;
+height: 30px;
+}
+button {
+  width: 130px;
+  margin-top: 35px;
+}
+button.btn {  
+  margin-left: 15px;
+}
+
+ 
+ 
 
 li{
-  list-style-type: none;
-  margin-left: 800px;
+list-style-type: none;
+color: black;
+
 }
+a {
+color: black;
+text-decoration: none;
+}
+a:hover {
+color:#16e6f5;
+}
+.bl-scroll { width: 280px;
+ max-height: 450px; 
+ overflow-x: hidden; 
+margin: auto;
+margin-top: -180px;
+
+}
+
+
+#body{}::-webkit-scrollbar{width: 5px;height: 5px;}::-webkit-scrollbar-track-piece{background-color: #ffffff;}::-webkit-scrollbar-thumb:vertical{height: 50px;background-color:#16e6f5;}::-webkit-scrollbar-thumb:horizontal{width: 5px;background-color: #096BAA;}
+
+
+.row-fluid { 
+margin-top: 70px;}
