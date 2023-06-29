@@ -91,4 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+var options = document.getElementsByClassName('#list_country option');
+options.forEach(function(option) {
+  option.style.backgroundColor = 'yellow';
+  option.style.color = 'black';
+});

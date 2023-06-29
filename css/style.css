@@ -39,6 +39,7 @@ input {
   border-color: rgb(213, 195, 190);
   color: rgb(213, 195, 190);
   padding: 20px;
+  font-size: 20px;
 }
 
 input:hover {
@@ -85,7 +86,7 @@ h1 {
 }
 
 h5 {
-  margin-left: 125px;
+ padding-bottom: 5px;
   font-family: Cold Turkey;
   color: rgb(213, 195, 190);
 }
@@ -128,6 +129,8 @@ a {
 
 #list_station {
   color: rgb(213, 195, 190);
+  font-size: 25px;
+  margin-top: 50px;
 }
 
 #body {}
@@ -163,6 +166,8 @@ select {
   text-align: left;
   vertical-align: top;
   color: rgb(213, 195, 190);
+  background-color: rgb(43, 64, 75);
+  font-size: 20px;
 }
 
 
@@ -170,12 +175,7 @@ select {
   margin-left: 250px;
 }
 
-select:valid+.label {
-  color: black;
-  top: -35px;
-  width: 300px;
 
-}
 
 #check-mark {
   width: 19px;
@@ -187,5 +187,8 @@ select:valid+.label {
   transform: rotate(45deg);
 }
 
-
+datalist.list_country option {
+  background-color: rgb(43, 64, 75);
+  color: rgb(231, 89, 7);
+}
 
