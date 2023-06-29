@@ -4,9 +4,9 @@ const Button = document.querySelector('#button');
 const list_station = document.querySelector('#list_station');
 const buttonBack = document.querySelector('#button_back');
 
-async function country_and_genre(strana) {
+async function country_and_genre(countrycode) {
   try {
-    const response = await fetch(`https://de1.api.radio-browser.info/json/stations/bycountry/${strana}`);
+const response = await fetch(`https://de1.api.radio-browser.info/json/stations/bycountry/${countrycode}`);
     if (!response.ok) {
       throw new Error('Сетевая ошибка');
     }
@@ -18,7 +18,7 @@ async function country_and_genre(strana) {
   }
 }
 
-const genres = ['classical', 'blues', 'hiphop', 'pop', 'rock', 'jazz', 'hip hop', 'trap', 'pasillo', 'R&B', 'trance', 'house', 'metal', 'pank', 'rap', 'kpop'];
+const genres = ['classical', 'blues', 'hiphop', 'pop', 'rock', 'jazz', 'hip hop', 'trap', 'pasillo', 'R&B', 'trance', 'house', 'electronic','metal', 'punk', 'rap','folk', 'kpop', 'country', 'sooul', 'dance'];
 genres.forEach(genre => {
   const option = document.createElement('option');
   option.value = genre;
